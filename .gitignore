@@ -1,0 +1,5 @@
+*.png
+datasets/
+__pycache__/
+*/__pycache__
+ckpts/*
