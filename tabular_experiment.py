@@ -53,7 +53,7 @@ parser.add_argument('--layer', type=int, default=5,
 parser.add_argument('--usehouseholder', action='store_true',
                     help='Train rotation matrix using householder reflection or not')
 parser.add_argument('--multidim_kernel', action='store_true',
-                    help='Use multi bandwidth kernel')
+                    help='Use multiple dimension bandwidth kernel')
 parser.add_argument('--test_interval', type=int, default=5,
                     help="Test interval")
 parser.add_argument('--early_stopping', type=int, default=10)
