@@ -61,7 +61,7 @@ parser.add_argument('--kde_num', type=int, default=1, help='Stacking multiple KD
 parser.add_argument(
     '--dataset',
     default='POWER',
-    help='POWER | GAS | HEPMASS | MINIBOONE | BSDS300 | MOONS')
+    help='POWER | GAS | HEPMASS | MINIBOONE | BSDS300')
 args = parser.parse_args()
 
 
