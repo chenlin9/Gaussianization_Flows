@@ -4,3 +4,4 @@ __pycache__/
 */__pycache__
 ckpts/*
 other/
+models/__pycache__
