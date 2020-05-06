@@ -41,7 +41,7 @@ parser.add_argument('--lr', type=float, default=1e-2,
 parser.add_argument('--batch_size', type=int, default=5000,
                     help="Batch size")
 parser.add_argument('--total_datapoints', type=int, default=100,
-                    help="Total number of data point for KDE")
+                    help="Total number of data points for each KDE layer")
 parser.add_argument('--adjust_step', type=int, default=10000,
                     help="Decrease learning rate after a couple steps")
 parser.add_argument('--epoch', type=int, default=1000,
@@ -51,13 +51,13 @@ parser.add_argument('--process_size', type=int, default=100,
 parser.add_argument('--layer', type=int, default=5,
                     help="Total number of Gaussianization layers")
 parser.add_argument('--usehouseholder', action='store_true',
-                    help='Train rotation matrix using householder reflection or not')
+                    help='Train rotation matrix using householder reflection')
 parser.add_argument('--multidim_kernel', action='store_true',
                     help='Use multiple dimension bandwidth kernel')
 parser.add_argument('--test_interval', type=int, default=5,
                     help="Test interval")
 parser.add_argument('--early_stopping', type=int, default=10)
-parser.add_argument('--kde_num', type=int, default=1, help='Stacking multiple KDE before each rotation layer')
+parser.add_argument('--kde_num', type=int, default=1, help='Stacking multiple KDE layers before each rotation layer')
 parser.add_argument(
     '--dataset',
     default='POWER',
