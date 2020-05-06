@@ -141,8 +141,6 @@ if __name__ == '__main__':
             if i % 10 == 0:
                 print("Epoch {} batch {} current loss {:.2f}({:.2f})".format(e, i,
                                                                 train_loss_r.item(), train_loss.item()/total))
-            if i >= 10: #remove this line!
-                break
         print("Total training points {}. Epoch {} train loss {}".format(total, e, train_loss/total))
 
         net.eval()
