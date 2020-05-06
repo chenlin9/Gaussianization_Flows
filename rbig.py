@@ -32,7 +32,7 @@ if __name__ == '__main__':
     if dataset == 'MNIST':
         channel = 1
         image_size = 28
-        lambd = 1e-6
+        lambd = 1e-5
         transform = transforms.Compose([
             transforms.Resize(image_size),
             transforms.ToTensor()

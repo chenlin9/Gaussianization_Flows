@@ -25,7 +25,7 @@ def generate_bandwidth(datapoints):
     return bandwidth
 
 
-def logit_transform(image, lambd=1e-6):
+def logit_transform(image, lambd=1e-5):
     image = lambd + (1 - 2 * lambd) * image
     return torch.log(image) - torch.log1p(-image)
 
