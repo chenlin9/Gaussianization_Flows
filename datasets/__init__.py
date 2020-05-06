@@ -1,4 +1,4 @@
-root = './tabular_data/'
+root = 'data/'
 
 from .power import POWER
 from .gas import GAS
