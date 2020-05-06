@@ -32,6 +32,5 @@ python tabular_experiment.py --multidim_kernel --usehouseholder
 ```
 and specify the dataset and settings by using the flags
 ```angular2
---total_datapoints  --process_size --dataset --layer --epoch 
---lr --batch_size
+--total_datapoints  --process_size --dataset --layer --epoch --lr --batch_size
 ```
