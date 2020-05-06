@@ -25,8 +25,9 @@ and generalize better on small training sets.
 To run RBIG experiments, simply run
 ``python rbig.py``
 ### Tabular Dataset Experiments
-To download tabular dataset, follow the instructions [here](https://github.com/gpapamak/maf).
-To run the experiments, run 
+To download tabular datasets, follow the instructions [here](https://github.com/gpapamak/maf).
+
+To run the experiments, run
 ```
 python tabular_experiment.py --multidim_kernel --usehouseholder
 ```
